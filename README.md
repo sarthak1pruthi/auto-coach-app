@@ -1,13 +1,13 @@
-# 🏋️‍♂️ Auto Coach App
+# 🏋️‍♂️ Auto Coach AI
 
 > **Your AI-Powered Intelligent Workout Planner.**
-> Stop guessing. Start progressing.
+> *Stop guessing. Start progressing.*
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![React](https://img.shields.io/badge/frontend-React_18-cyan)
-![FastAPI](https://img.shields.io/badge/backend-FastAPI-green)
+[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge&logo=vercel)](https://auto-coach-app.vercel.app/)
+[![Backend Status](https://img.shields.io/badge/API-Online-blue?style=for-the-badge&logo=render)](https://auto-coach-app1.onrender.com)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge)]()
 
-**Auto Coach** is a modern, full-stack web application designed to take the thinking out of your lifting. It uses an intelligent volume governor algorithm to generate optimal workout sessions based on your goals (Strength vs. Hypertrophy), preferred split (PPL, Arnold, Texas Method, etc.), and recovery status.
+**Auto Coach** is a modern, full-stack Progressive Web App (PWA) designed to take the thinking out of your lifting. It uses an **intelligent volume governor algorithm** to generate optimal workout sessions based on your goals (Strength vs. Hypertrophy), preferred split, and recovery status.
 
 ## ✨ Features
 
@@ -19,24 +19,26 @@
 ### 📊 Data & Analytics
 -   **Dashboard**: Visualize your weekly muscle group volume.
 -   **History**: View past performance graphs for every exercise.
--   **Streaks & Levels**: Gamified consistency tracking to keep you motivated.
+-   **Gamification**: Streaks & Levels system to keep you consistent.
 
 ### 🛠️ Premium Tools
 -   **Plate Calculator**: Never do math at the barbell again.
--   **Rest Timer**: Configurable rest intervals with sound notifications.
+-   **Rest Timer**: Configurable rest intervals.
+-   **Mobile PWA**: Installable on iOS/Android (Add to Home Screen).
 -   **Glassmorphic UI**: A stunning, high-performance dark mode interface.
 
-### 🔐 Secure & Personalized
--   **User Authentication**: Secure JWT-based login and registration.
--   **Private Logs**: Your data is bound to your account.
+### 🔐 Secure & Cloud-Sync
+-   **Authentication**: JWT-based login (Secure hashing with PBKDF2).
+-   **Database**: Supabase (PostgreSQL) for persistent data storage.
 
 ## 🚀 Tech Stack
 
--   **Frontend**: React (Vite), Chart.js, Custom Glassmorphic CSS.
+-   **Frontend**: React (Vite), Chart.js, Tailwind-like Custom CSS.
 -   **Backend**: Python FastAPI, SQLAlchemy, Pydantic.
--   **Database**: SQLite (Local), Flexible CORS for deployment.
+-   **Database**: Supabase (PostgreSQL).
+-   **Deployment**: Vercel (Frontend) + Render (Backend).
 
-## 🏃‍♂️ Getting Started
+## 🏃‍♂️ Getting Started (Local Dev)
 
 ### Prerequisites
 -   Node.js (v16+)
@@ -62,7 +64,6 @@
     pip install -r requirements.txt
     uvicorn app.main:app --reload
     ```
-    *The API will start at http://127.0.0.1:8000*
 
 3.  **Setup Frontend**
     ```bash
@@ -70,7 +71,6 @@
     npm install
     npm run dev
     ```
-    *The App will start at http://localhost:5173*
 
 ## 🤝 Contributing
 Contributions are welcome! Please fork the repository and submit a pull request.
